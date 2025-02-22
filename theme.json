@@ -156,7 +156,7 @@
 		},
 		"layout": {
 			"contentSize": "1100px",
-			"contentSizeWide": "1400px"
+			"wideSize": "1400px"
 		}
 	},
 	"styles": {
@@ -174,9 +174,19 @@
 			"link": {
 				"color": {
 					"text": "var:preset|color|brand"
+				},
+				":hover": {
+					"color": {
+						"text": "var:preset|color|dark"
+					}
 				}
 			},
 			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|montserrat",
+					"letterSpacing": "0.5px",
+					"textTransform": "uppercase"
+				},
 				"color": {
 					"text": "var:preset|color|dark"
 				}
@@ -191,7 +201,6 @@
 			},
 			"h2": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|montserrat",
 					"fontSize": "var:preset|font-size|xxx-large",
 					"lineHeight": "1.58",
 					"letterSpacing": "0.5px"
@@ -199,7 +208,6 @@
 			},
 			"h3": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|montserrat",
 					"fontSize": "var:preset|font-size|xx-large",
 					"lineHeight": "1.58",
 					"letterSpacing": "0.5px"
@@ -207,7 +215,6 @@
 			},
 			"h4": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|montserrat",
 					"fontSize": "var:preset|font-size|xxx-large",
 					"lineHeight": "1.58",
 					"letterSpacing": "0.5px"
@@ -215,7 +222,6 @@
 			},
 			"h5": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|montserrat",
 					"fontSize": "var:preset|font-size|xx-large",
 					"lineHeight": "1.58",
 					"letterSpacing": "0.5px"
@@ -223,7 +229,6 @@
 			},
 			"h6": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|montserrat",
 					"fontSize": "var:preset|font-size|medium",
 					"lineHeight": "1.58",
 					"letterSpacing": "0.5px"
