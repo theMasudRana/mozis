@@ -3,6 +3,7 @@
 	"version": 3,
 	"settings": {
 		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
 		"color": {
 			"defaultPalette": false,
 			"defaultDuotone": false,
@@ -54,6 +55,12 @@
 			"fluid": true,
 			"defaultFontSizes": false,
 			"fontSizes": [
+				{
+					"fluid": false,
+					"slug": "extra-small",
+					"size": "0.75rem",
+					"name": "Extra Small"
+				},
 				{
 					"fluid": false,
 					"slug": "small",
@@ -160,6 +167,14 @@
 		}
 	},
 	"styles": {
+		"spacing": {
+			"padding": {
+				"top": "0",
+				"right": "16px",
+				"bottom": "0",
+				"left": "16px"
+			}
+		},
 		"color": {
 			"background": "var:preset|color|white",
 			"text": "var:preset|color|text"
@@ -177,8 +192,32 @@
 				},
 				":hover": {
 					"color": {
-						"text": "var:preset|color|dark"
+						"text": "var:preset|color|brand"
 					}
+				}
+			},
+			"button": {
+				"color": {
+					"background": "var:preset|color|brand",
+					"text": "var:preset|color|white"
+				},
+				"border": {
+					"radius": "40px"
+				},
+				"spacing": {
+					"padding": {
+						"top": "10px",
+						"right": "30px",
+						"bottom": "10px",
+						"left": "30px"
+					}
+				},
+				"typography": {
+					"fontSize": "var:preset|font-size|extra-small",
+					"lineHeight": "1.58",
+					"letterSpacing": "1px",
+					"fontWeight": "400",
+					"textTransform": "uppercase"
 				}
 			},
 			"heading": {
@@ -242,6 +281,42 @@
 						"top": "0",
 						"bottom": "0"
 					}
+				}
+			},
+			"core/navigation": {
+				"typography": {
+					"fontSize": "var:preset|font-size|extra-small",
+					"lineHeight": "1.58",
+					"letterSpacing": "1px",
+					"fontWeight": "400",
+					"textTransform": "uppercase"
+				},
+				"color": {
+					"text": "var:preset|color|dark"
+				}
+			},
+			"core/button": {
+				"spacing": {
+					"padding": {
+						"top": "10px",
+						"right": "30px",
+						"bottom": "10px",
+						"left": "30px"
+					}
+				},
+				"typography": {
+					"fontSize": "var:preset|font-size|extra-small",
+					"lineHeight": "1.58",
+					"letterSpacing": "1px",
+					"fontWeight": "400",
+					"textTransform": "uppercase"
+				},
+				"border": {
+					"radius": "4px"
+				},
+				"color": {
+					"background": "var:preset|color|brand",
+					"text": "var:preset|color|brand"
 				}
 			}
 		}

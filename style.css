@@ -3,6 +3,20 @@ Theme Name: Mozis
 Theme URI: https://masudrana.me/
 Author: Masud Rana
 Author URI: https://masudrana.me/
-Description: Mozis theme
+Description: Mozis minimal portfolio theme
+Requires at least: 6.7
+Tested up to: 6.7
+Requires PHP: 
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mozis
+Tags: Minimal, Portfolio, Blog
 */
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+    background-color: #fff;
+    border: none;
+    border-top: 2px solid var(--wp--preset--color--brand);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
