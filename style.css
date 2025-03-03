@@ -14,9 +14,85 @@ Text Domain: mozis
 Tags: Minimal, Portfolio, Blog
 */
 
-.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
-    background-color: #fff;
-    border: none;
-    border-top: 2px solid var(--wp--preset--color--brand);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.wp-block-navigation .wp-block-page-list,
+.wp-block-navigation__container,
+.wp-block-navigation__responsive-close,
+.wp-block-navigation__responsive-container,
+.wp-block-navigation__responsive-container-content,
+.wp-block-navigation__responsive-dialog {
+    gap: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+        background-color: var(--wp--preset--color--white);
+        border: none;
+        border-top: 2px solid var(--wp--preset--color--brand);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    :where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item a:not(.wp-element-button)), 
+    :where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-submenu a:not(.wp-element-button)), 
+    :where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-submenu button.wp-block-navigation-item__content), 
+    :where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-pages-list__item button.wp-block-navigation-item__content) {
+        padding: 0.5rem;
+        position: relative;
+    }
+}
+
+.wp-block-navigation .wp-block-navigation-item,
+.wp-block-navigation-item__content {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+    position: relative;
+}
+
+.wp-block-navigation-item__content::after {
+    color: rgba(0, 0, 0, 0);
+    content: "•";
+    font-size: 7px;
+    left: 0px;
+    pointer-events: none;
+    position: absolute;
+    text-shadow: rgba(0, 0, 0, 0) 0px 0px;
+    top: -0.5rem;
+    transition: text-shadow 0.3s, color 0.3s;
+    z-index: 100;
+}
+
+.wp-block-navigation-item:hover > .wp-block-navigation-item__content::after {
+    color: var(--wp--preset--color--dark);
+    text-shadow: 8px 0 var(--wp--preset--color--dark), 16px 0 var(--wp--preset--color--dark);
+}
+
+.wp-block-navigation .wp-block-navigation-item:hover,
+.wp-block-navigation .wp-block-navigation-item:hover > .wp-block-navigation-item__content {
+    color: var(--wp--preset--color--brand);
+}
+
+.wp-block-navigation .wp-block-navigation__submenu-icon {
+    height: 10px;
+    width: 10px;
+}
+
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container {
+    padding: 1rem 0 22px 20px;
+    gap: 1rem;
+}
+
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container>.wp-block-navigation-item>.wp-block-navigation-item__content {
+    padding: 0;
+}
+
+
+/* Add style for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .wp-block-navigation-item__content {
+        transition: none;
+    }
+}
+
+@media (min-width: 782px) {
+    .wp-block-navigation .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon {
+        margin-right: 1.25em;
+    }
 }
