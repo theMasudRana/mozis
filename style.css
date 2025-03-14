@@ -7,23 +7,25 @@ Description: Mozis minimal portfolio theme
 Requires at least: 6.7
 Tested up to: 6.7
 Requires PHP: 
-Version: 1.0.0
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mozis
-Tags: Minimal, Portfolio, Blog
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, blog, portfolio, news
 */
 
-.wp-block-navigation .wp-block-page-list,
-.wp-block-navigation__container,
-.wp-block-navigation__responsive-close,
-.wp-block-navigation__responsive-container,
-.wp-block-navigation__responsive-container-content,
-.wp-block-navigation__responsive-dialog {
-    gap: 20px;
-}
-
+/* Deskto navigation */
 @media screen and (min-width: 600px) {
+
+    .wp-block-navigation .wp-block-page-list,
+    .wp-block-navigation__container,
+    .wp-block-navigation__responsive-close,
+    .wp-block-navigation__responsive-container,
+    .wp-block-navigation__responsive-container-content,
+    .wp-block-navigation__responsive-dialog {
+        gap: 20px;
+    }
+
     .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
         background-color: var(--wp--preset--color--white);
         border: none;
@@ -38,8 +40,26 @@ Tags: Minimal, Portfolio, Blog
         padding: 0.5rem;
         position: relative;
     }
+
+    .wp-block-navigation .has-child .wp-block-navigation__submenu-container {
+        padding-inline-start: 22px;
+        padding-inline-end: 0;
+        padding-block: 1rem;
+        gap: 1rem;
+    }
+
+    .wp-block-navigation .has-child .wp-block-navigation__submenu-container>.wp-block-navigation-item>.wp-block-navigation-item__content {
+        padding: 0;
+    }
+
+    .wp-block-navigation .wp-block-navigation__submenu-icon {
+        height: 10px;
+        width: 10px;
+        margin-inline-start: 6px;
+    }
 }
 
+/* Navigation item hover */
 .wp-block-navigation .wp-block-navigation-item,
 .wp-block-navigation-item__content {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
@@ -54,9 +74,8 @@ Tags: Minimal, Portfolio, Blog
     pointer-events: none;
     position: absolute;
     text-shadow: rgba(0, 0, 0, 0) 0px 0px;
-    top: -0.5rem;
-    transition: text-shadow 0.3s, color 0.3s;
-    z-index: 100;
+    bottom: -0.5rem;
+    transition: text-shadow 0.3s ease 0s, color 0.3s ease 0s;
 }
 
 .wp-block-navigation-item:hover > .wp-block-navigation-item__content::after {
@@ -69,30 +88,41 @@ Tags: Minimal, Portfolio, Blog
     color: var(--wp--preset--color--brand);
 }
 
-.wp-block-navigation .wp-block-navigation__submenu-icon {
-    height: 10px;
-    width: 10px;
-}
-
-.wp-block-navigation .has-child .wp-block-navigation__submenu-container {
-    padding: 1rem 0 22px 20px;
-    gap: 1rem;
-}
-
-.wp-block-navigation .has-child .wp-block-navigation__submenu-container>.wp-block-navigation-item>.wp-block-navigation-item__content {
-    padding: 0;
-}
-
-
-/* Add style for reduced motion */
+/* Menu item transition */
 @media (prefers-reduced-motion: reduce) {
+
     .wp-block-navigation-item__content {
         transition: none;
     }
 }
 
-@media (min-width: 782px) {
-    .wp-block-navigation .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon {
-        margin-right: 1.25em;
+/* Small device navigation */
+@media (max-width: 599px) {
+
+    .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container {
+        padding-left: 0;
+        padding-right: 1.5rem;
     }
+
+    .wp-block-navigation__responsive-dialog {
+        padding: 0 2rem 2rem;
+    }
+
+    .wp-block-navigation__responsive-container-close {
+        right: 2rem;
+        top: 1rem;
+    }
+
+    .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container,
+    .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container {
+        gap: 1rem;
+    }
+
+    .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container {
+        padding-top: 1rem;
+    }
+}
+
+.wp-site-blocks footer {
+    margin-block-start: 0;
 }
