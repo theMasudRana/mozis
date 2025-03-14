@@ -6,6 +6,10 @@ Requires PHP: 5.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+== Description ==
+
+Mozis is a sleek and minimal portfolio WordPress theme designed for creatives who value simplicity and elegance. Fully compatible with full-site editing, Mozis offers effortless customization of colors, typography, and layouts, allowing you to craft a portfolio that truly reflects your style. With a responsive and lightweight design, it ensures a seamless browsing experience across all devices. Built for performance and SEO optimization, Mozis helps your work stand out while maintaining fast load times. Whether you're a designer, photographer, or freelancer, Mozis provides the perfect foundation to showcase your talent with clarity and professionalism.
+
 == Changelog ==
 
 = 1.0 =

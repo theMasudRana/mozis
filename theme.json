@@ -575,15 +575,18 @@
 				}
 			},
 			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--text)"
+				},
+				"typography": {
+					"textDecoration": "underline"
+				},
 				":hover": {
 					"color": {
-						"text": "var(--wp--preset--color--dark)"
+						"text": "var(--wp--preset--color--brand)"
 					}
 				},
-				"color": {
-					"text": "var(--wp--preset--color--brand)"
-				},
-				"css": "{ transition: all 0.3s ease; }"
+				"css": "{ transition: color 0.3s ease; }"
 			}
 		},
 		"spacing": {
