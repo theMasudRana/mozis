@@ -98,13 +98,11 @@
 			"customSpacingSize": true,
 			"defaultSpacingSizes": true,
 			"spacingScale": {
-				"theme": {
-					"increment": 1.5,
-					"mediumStep": 1.5,
-					"operator": "*",
-					"steps": 7,
-					"unit": "rem"
-				}
+				"increment": 1.5,
+				"mediumStep": 1.5,
+				"operator": "*",
+				"steps": 7,
+				"unit": "rem"
 			},
 			"spacingSizes": [
 				{
@@ -156,21 +154,6 @@
 			"defaultFontSizes": false,
 			"fluid": true,
 			"fontFamilies": [
-				{
-					"fontFace": [
-						{
-							"fontFamily": "\"Fira Code\"",
-							"fontStyle": "normal",
-							"fontWeight": "300 700",
-							"src": [
-								"file:./assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2"
-							]
-						}
-					],
-					"fontFamily": "\"Fira Code\", monospace",
-					"name": "Fira Code",
-					"slug": "fira-code"
-				},
 				{
 					"fontFace": [
 						{
@@ -456,33 +439,6 @@
 				},
 				"typography": {
 					"fontStyle": "italic"
-				}
-			},
-			"core/search": {
-				"border": {
-					"bottom": {
-						"style": "none",
-						"width": "0px"
-					},
-					"color": null,
-					"left": {
-						"style": "none",
-						"width": "0px"
-					},
-					"radius": "4px",
-					"right": {
-						"style": "none",
-						"width": "0px"
-					},
-					"style": null,
-					"top": {
-						"style": "none",
-						"width": "0px"
-					},
-					"width": null
-				},
-				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
 			"core/site-title": {
