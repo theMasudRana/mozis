@@ -12,6 +12,10 @@ Mozis is a sleek and minimal portfolio WordPress theme designed for creatives wh
 
 == Changelog ==
 
+= 1.0.1 =
+* update: Theme screenshot updated
+* update: Image license updated
+
 = 1.0 =
 * Initial release
 
@@ -34,9 +38,7 @@ See the GNU General Public License for more details.
 === Images ===
 
 Man In Blue Top Carrying A Longboard
-Free to use
-man-in-blue-top-carrying-a-longboard.jpg
-https://www.pexels.com/photo/man-in-blue-top-carrying-a-longboard-988914/
+https://pxhere.com/en/photo/1647958 [https://pxhere.com/en/license]
 
 === Fonts ===
 
