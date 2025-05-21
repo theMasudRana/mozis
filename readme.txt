@@ -1,8 +1,8 @@
 == Mozis ==
 Contributors: immasud
 Requires at least: 6.0
-Tested up to: 6.7
-Requires PHP: 5.7
+Tested up to: 6.5
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,6 +11,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Mozis is a sleek and minimal portfolio WordPress theme designed for creatives who value simplicity and elegance. Fully compatible with full-site editing, Mozis offers effortless customization of colors, typography, and layouts, allowing you to craft a portfolio that truly reflects your style. With a responsive and lightweight design, it ensures a seamless browsing experience across all devices. Built for performance and SEO optimization, Mozis helps your work stand out while maintaining fast load times. Whether you're a designer, photographer, or freelancer, Mozis provides the perfect foundation to showcase your talent with clarity and professionalism.
 
 == Changelog ==
+
+= 1.1.0 =
+* Enhancement: Added new "Call to Action" block pattern.
+* Update: Updated WordPress compatibility to version 6.5.
+* Update: Changed minimum PHP requirement to 7.4.
+* Update: Reviewed and improved internationalization, generated .pot file.
+* Fix: Corrected "Requires at least" WordPress version in style.css.
+* Docs: Reviewed code comments.
+* Accessibility: Reviewed theme color contrast for common use cases.
 
 = 1.0.2 =
 * update: Properly sized and optimized screenshot updated
