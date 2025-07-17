@@ -19,7 +19,7 @@
 
 <!-- wp:query-no-results {"align":"center"} -->
 <!-- wp:paragraph {"align":"center","placeholder":"Add text or blocks that will display when a query returns no results."} -->
-<p class="has-text-align-center">No posts found</p>
+<p class="has-text-align-center"><?php esc_html_e( 'No posts found', 'mozis' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></div>
