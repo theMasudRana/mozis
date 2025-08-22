@@ -3,6 +3,7 @@
  * Title: About
  * Slug: mozis/about
  * Categories: mozis
+ * Description: A beautiful about page pattern with an image on the left and content with social links on the right. Features a minimal, light design consistent with the Mozis theme.
  */
 ?>
 
