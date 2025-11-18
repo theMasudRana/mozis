@@ -33,7 +33,8 @@ add_action( 'wp_enqueue_scripts', 'mozis_enqueue_styles' );
 if ( ! function_exists( 'mozis_block_pattern_category' ) ) :
 
 	/**
-	 * Register block pattern category.
+   * Register block pattern category.
+   * Some test comment
 	 *
 	 * @since Mozis 1.0
 	 *

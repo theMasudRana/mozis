@@ -13,6 +13,7 @@ Mozis is a sleek and minimal portfolio WordPress theme designed for creatives wh
 == Changelog ==
 = 1.0.3 =
 * update: Made string translatable
+* Tested: Tested for WordPress 6.8.2
 
 = 1.0.2 =
 * update: Properly sized and optimized screenshot updated
